@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="border rounded p-5 ">
+            <form class="row g-3 ">
+                <div class="col-12 col-md-6">
+                    <label for="lisson1" class="form-label ">first-name</label>
+                    <input type="text" class="form-control w-75" id="lisson1" placeholder="first-name" name="fn"
+                        required>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <label for="lisson2" class="form-label ">last name (Optional)</label>
+                    <input type="text" class="form-control w-75" id="lisson2" placeholder="last-name" name="ln">
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <label for="lisson3" class="form-label">date of birth</label>
+                    <input type="date" class="form-control w-75" id="lisson3" name="date" required>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <label for="lisson4" class="form-label">city*</label>
+                    <select class="form-select w-75 " aria-label="default select example" id="lisson4" disabled>
+                        <option>open this select menu</option>
+                        <option value="usa">USA</option>
+                        <option value="rus">RUSSIA</option>
+                        <option value="uzb" selected>UZBEKISTAN</option>
+                        <option value="kz">KAZAKHISTAN</option>
+                        <option value="pa">PAKISTAN</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <label for="lisson5" class="form-label">password*</label>
+                    <input type="password" class="form-control w-75" id="lisson5" aria-describedby="passwordhelpblock"
+                        placeholder="write your password" name="pswd" required>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <label for="lisson6" class="form-label">email-adders</label>
+                    <input type="email" class="form-control w-75" placeholder="name@examle.com" id="lisson6" name="date"
+                        required>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <label for="lisson7" class="form-label">phone number (optional)</label>
+                    <input type="tel" class="form-control w-75" id="lisson7" name="tel" placeholder="+998 ## ### ## ##"
+                        pattern="[+]{1}{0-9}{3}{0-9}{2}{0-9}{3}{0-9}{2}{0-9}{2}">
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <label for="lisson8" class="form-label">drop your images*</label>
+                    <input type="file" class="form-control w-75" id="lisson8" name="images" required multiple>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <label class="form-label ">gender :</label>
+                    <div class="mx-3">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="flexRadioDefault1" name="gender" value="female"
+                                required>
+                            <label class="form-check-label" for="flexRadioDefault1">female</label>
+                        </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input " name="gender" id="flexRadioDefault2" value="male">
+                        <label class="form-chesk-label" for="flexRadioDefault2">Male</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input " name="gender" value="not" id="flexRadioDefault3"
+                            checked>
+                        <label for="flexRadioDefault3" class="form-check-label ">no specific</label>
+                    </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-md-6 ">
+                    <div class="d-f align-items-center h-100">
+                        <div class="form-chesk">
+                            <label for="flexcheckdefault1" class="form-check-label ">married:</label>
+                            <input type="checkbox" class="form-check-input " name="married" id="flexcheckdefault1">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <label for="textarea" class="mb-2">feedback (optipnal)</label>
+                    <textarea class="form-control w-75" placeholder="write a fedback here" id="textarea"
+                        style="height: -100px;"></textarea>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <label for="examplecolorinput" class="form-label">color picker</label>
+                    <input type="color" class="form-control form-control-color"
+                        id="examplecolorinput" name="" title="choose your color" value="#000000" recolorquired>
+                </div>
+
+                <div class="col-12 col-md-6 d-flex  gap-4 ">
+                    <button type="submit" class="btn btn btn-outline-success ">sumbit</button>
+                    <button type="reset" class="btn btn-outline-danger ">reset</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
